@@ -68,7 +68,7 @@ script:
   - $PROJECT_ROOT/vendor/bin/phpunit -c $DRUPAL_ROOT/core/phpunit.xml.dist --verbose --group=$MODULE $DRUPAL_ROOT/modules/contrib/$MODULE
 
   # Run the deprecation checks.
-  - $PROJECT_ROOT/vendor/bin/drupal-check $DRUPAL_ROOT/modules/contrib
+  - $PROJECT_ROOT/vendor/bin/drupal-check $DRUPAL_ROOT/modules/contrib/$MODULE
 
   # Check for coding standards. First change directory to our module.
   - cd $DRUPAL_ROOT/modules/contrib/$MODULE
